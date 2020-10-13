@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<orarend>	
+	<ora id="001" tipus="gyak"></ora>
+	<targy>Matstat</targy>
+	<idopont>
+		<nap>hétfő</nap>
+		<tol>10:00</tol>
+		<ig>12:00</ig>		
+	</idopont>
+	<helyszin>XXX.előadó</helyszin>
+	<oktato>Dr. Karácsony Zsolt</oktato>
+	<szak>BPI</szak>
+	
+	<ora id="002" tipus="elm"></ora>
+	<targy>Matstat</targy>
+	<idopont>
+		<nap>kedd</nap>
+		<tol>10:00</tol>
+		<ig>12:00</ig>		
+	</idopont>
+	<helyszin>III.előadó</helyszin>
+	<oktato>Dr. Karácsony Zsolt</oktato>
+	<szak>BPI</szak>
+	
+	<ora id="003" tipus="gyak"></ora>
+	<targy>Valszám</targy>
+	<idopont>
+		<nap>Szerda</nap>
+		<tol>08:00</tol>
+		<ig>12:00</ig>		
+	</idopont>
+	<helyszin>X.előadó</helyszin>
+	<oktato>Dr. Karácsony Zsolt</oktato>
+	<szak>BPI</szak>
+</orarend>
