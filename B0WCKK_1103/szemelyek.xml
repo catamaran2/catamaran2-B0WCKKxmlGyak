@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE szemelyek SYSTEM "szemelyek.dtd">
+
+<szemelyek>
+	<szemely id="id1">
+		<nev>Dora</nev>
+		<kor>29</kor>
+		<varos>Budapest</varos>
+	</szemely>
+	<szemely id="id2">
+		<nev>Kata</nev>
+		<varos>Miskolc</varos>
+	</szemely>
+	<szemely id="id3">
+		<nev>Attila</nev>
+		<kor>29</kor>
+		<varos>Budapest</varos>
+	</szemely>
+</szemelyek>
