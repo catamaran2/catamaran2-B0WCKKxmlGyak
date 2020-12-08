@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" ?>
+
+<filmek xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="XSD_B0WCKK.xsd">
+    
+    <film cim="Egy új remény">
+        <genre>sci-fi</genre>
+        <rendező>
+            <név>George Lucas</név>
+            <rendezett_filmjei>28</rendezett_filmjei> <!--Darabszám-->
+            <születési_év>1944</születési_év>
+        </rendező>
+        <főszereplő>
+            <név>Mark Hamill</név>
+            <filmekben_szerepelt>22</filmekben_szerepelt>
+            <születési_év>1951</születési_év>
+        </főszereplő>
+        <értékelés>
+            <kritikus>8.6</kritikus>
+            <nézői>9.0</nézői>
+        </értékelés>
+    </film>
+    
+    <film cim="Bosszúállók">
+        <genre>akciófilm</genre>
+        <rendező>
+            <név>Joss Whedon</név>
+            <rendezett_filmjei>9</rendezett_filmjei> <!--Darabszám-->
+            <születési_év>1964</születési_év>
+        </rendező>
+        <főszereplő>
+            <név>Robert Downey Jr.</név>
+            <filmekben_szerepelt>41</filmekben_szerepelt>
+            <születési_év>1965</születési_év>
+        </főszereplő>
+        <értékelés>
+            <kritikus>92</kritikus>
+            <nézői>91</nézői>
+        </értékelés>
+    </film>
+    
+    <film cim="Titanic">
+        <genre>katasztrófafilm</genre>
+        <rendező>
+            <név>James Cameron</név>
+            <rendezett_filmjei>30</rendezett_filmjei> <!--Darabszám-->
+            <születési_év>1954</születési_év>
+        </rendező>
+        <főszereplő>
+            <név>Leonardo DiCaprio</név>
+            <filmekben_szerepelt>20</filmekben_szerepelt>
+            <születési_év>1974</születési_év>
+        </főszereplő>
+        <értékelés>
+            <kritikus>89</kritikus>
+            <nézői>69</nézői>
+        </értékelés>
+    </film>
+    
+    <film cim="Csupasz pisztoly">
+        <genre>vígjáték</genre>
+        <rendező>
+            <név>David Zucker</név>
+            <rendezett_filmjei>25</rendezett_filmjei> <!--Darabszám-->
+            <születési_év>1947</születési_év>
+        </rendező>
+        <főszereplő>
+            <név>Leslie Nielsen</név>
+            <filmekben_szerepelt>26</filmekben_szerepelt>
+            <születési_év>1926</születési_év>
+        </főszereplő>
+        <értékelés>
+            <kritikus>88</kritikus>
+            <nézői>84</nézői>
+        </értékelés>
+    </film>
+    
+</filmek>
