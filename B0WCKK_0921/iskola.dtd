@@ -1,0 +1,10 @@
+<!ELEMENT iskola (#PCDATA | tanar | tantargy)*>
+<!ELEMENT tanar (#PCDATA | nev | szak)*>
+<!ATTLIST tanar kod CDATA #IMPLIED>
+<!ELEMENT szak (#PCDATA)>
+<!ELEMENT tantargy (#PCDATA | tnev | osztaly)*>
+<!ATTLIST tantargy kod CDATA #IMPLIED>
+<!ATTLIST tantargy oktato CDATA #IMPLIED>
+<!ELEMENT tnev (#PCDATA)>
+<!ELEMENT nev (#PCDATA)>
+<!ELEMENT osztaly (#PCDATA)>
