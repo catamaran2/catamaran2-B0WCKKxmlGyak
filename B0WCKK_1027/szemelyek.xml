@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE szemelyek SYSTEM "file:/G:/Oxygen%20XML%20Editor%2023/projects/szemelyek.dtd">
+
+<szemelyek>
+    <szemely>
+        <nev>Dóra</nev>
+        <kor>25</kor>
+        <város>Budapest</város>
+    </szemely>
+    <szemely>
+        <nev>Jani</nev>
+        <kor>25</kor>
+        <város>Budapest</város>
+    </szemely>
+    <szemely>
+        <nev>Timi</nev>
+        <kor>25</kor>
+        <város>Budapest</város>
+    </szemely>
+    
+    
+</szemelyek>

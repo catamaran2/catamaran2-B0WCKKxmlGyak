@@ -1,0 +1,5 @@
+<!ELEMENT szemelyek (#PCDATA | szemely)*>
+<!ELEMENT szemely (#PCDATA | nev | kor | város)*>
+<!ELEMENT város (#PCDATA)>
+<!ELEMENT nev (#PCDATA)>
+<!ELEMENT kor (#PCDATA)>
