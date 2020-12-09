@@ -1,0 +1,12 @@
+<!ELEMENT tol (#PCDATA)>
+<!ELEMENT targy (#PCDATA)>
+<!ELEMENT oktato (#PCDATA)>
+<!ELEMENT szak (#PCDATA)>
+<!ELEMENT idopont (#PCDATA | nap | tol | ig)*>
+<!ELEMENT nap (#PCDATA)>
+<!ELEMENT helyszin (#PCDATA)>
+<!ELEMENT ig (#PCDATA)>
+<!ELEMENT orarend (#PCDATA | ora | targy | idopont | helyszin | oktato | szak)*>
+<!ELEMENT ora (#PCDATA)>
+<!ATTLIST ora id CDATA #IMPLIED>
+<!ATTLIST ora tipus CDATA #IMPLIED>
