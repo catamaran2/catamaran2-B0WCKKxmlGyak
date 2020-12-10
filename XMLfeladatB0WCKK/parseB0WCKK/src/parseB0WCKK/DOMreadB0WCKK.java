@@ -1,72 +1,53 @@
-package parseB0WCKK;
-
-import java.nio.file.Path;
-import java.nio.file.Paths;
+package XMLbeadandoB0WCKK;
 
 import java.io.File;
-import java.io.IOException;
-
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
-
-import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.parsers.DocumentBuilder;
+import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
+import org.w3c.dom.Node;
+import org.w3c.dom.Element;
 
-public class DOMreadB0WCKK {
+public class DOMReadB0WCKK {
 
 	public static void main(String[] args) {
-
 		
-		//java file jelenlegi hely keres�se, troubleshootinghoz
-		Path currentRelativePath = Paths.get(""); 
-		String s = currentRelativePath.toAbsolutePath().toString();
-		System.out.println("Current relative path is: " + s);
-
 		try {
-
-			//xml file el�r�se. Nem tal�lja a filet sehogy sem.
-		    String filepath = "C:/Users/Intel/eclipse-workspace/parseB0WCKK/XMLB0WCKK.xml";
-			File fXmlFile = new File(filepath);
-		    DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-		    DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-		    Document doc = dBuilder.parse(fXmlFile);
-		            
-		    //strukt�ra normaliz�l�s
-		    doc.getDocumentElement().normalize();
-
-		    System.out.println("Root element :" + doc.getDocumentElement().getNodeName());
-		            
-		    NodeList nList = doc.getElementsByTagName("filmek");
-		            
-		    System.out.println("----------------------------");
-
-		    for (int temp = 0; temp < nList.getLength(); temp++) {
-
-		        Node nNode = nList.item(temp);
-		                
-		        System.out.println("\nCurrent Element :" + nNode.getNodeName());
-		                
-		        if (nNode.getNodeType() == Node.ELEMENT_NODE) {
-
-		            Element eElement = (Element) nNode;
-		            
-
-		            System.out.println("Film c�me : " + eElement.getElementsByTagName("c�m").item(0).getTextContent());
-
-		            System.out.println("rendez� neve : " + eElement.getAttribute("n�v"));
-		            System.out.println("Genre : " + eElement.getElementsByTagName("genre").item(0).getTextContent());
-
-		        }
-		    }
-		    } catch (Exception e) {
-		    e.printStackTrace();
-		    }
-		
-		
+			//megnyitja az xml filet
+			File inputFile = new File("G:\\Oxygen XML Editor 23\\projects\\beadandoB0WCKK.xml");
+			
+			//documentbuilder
+			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+			factory.setNamespaceAware(true);
+			DocumentBuilder builder = factory.newDocumentBuilder();
+			
+			Document doc = builder.parse(inputFile);
+			
+			
+			//dokumentum normalizálása
+			doc.getDocumentElement().normalize();
+			//root element kiírása
+			System.out.println("Root element: "+ doc.getDocumentElement().getNodeName());
+			//létrehoz egy nodelistet a filmekről
+			NodeList nList = doc.getElementsByTagName("film");
+	        System.out.println("----------------------------");
+	        //végigmegy az összes node-on a listában, és mindegyiknek kiírja az összes adatát
+	        for(int i = 0 ; i < nList.getLength(); i++ ) {
+	        	Node nNode = nList.item(i);
+	        	System.out.println("\nCurrent node: " + nNode.getNodeName());
+	        	
+	        	Element eElement = (Element) nNode;
+	        	System.out.println("Film címe: " + eElement.getAttribute("cim"));
+	        	System.out.println("Genre: " + eElement.getElementsByTagName("genre").item(0).getTextContent());
+	        	System.out.println("Rendező neve, film(db), szül.év: " + eElement.getElementsByTagName("rendező").item(0).getTextContent());
+	        	System.out.println("Főszereplő neve, film(db), szül.év: " + eElement.getElementsByTagName("főszereplő").item(0).getTextContent());
+	        	System.out.println("Kritikai értékelés és nézői értékelés: " + eElement.getElementsByTagName("értékelés").item(0).getTextContent());
+	        }
+			
+			
+		}catch (Exception e) {
+	         e.printStackTrace();
+	      }
 	}
 
 }
